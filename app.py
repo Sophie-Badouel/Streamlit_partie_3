@@ -21,7 +21,10 @@ if 'username' not in st.session_state:
 #le login
 def login_page():
     st.title("")  #espace
-    
+
+#création de colonnes pour centrer le formulaire
+    col1, col2, col3 = st.columns([1, 2, 1])
+
     with col2:
         #cadre pour formulaire
         with st.container(border=True):
